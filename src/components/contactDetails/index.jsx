@@ -98,7 +98,6 @@ export default function ContactDetails({ form, errors, update }) {
   return (
     <div className="space-y-6">
       <div className="grid gap-x-5 gap-y-5 sm:grid-cols-2">
-        {/* Street Address */}
         <div className="sm:col-span-2">
           <Field
             label="Street Address / Residence"
@@ -124,7 +123,6 @@ export default function ContactDetails({ form, errors, update }) {
           </Field>
         </div>
 
-        {/* City */}
         <Field label="City / Town" id="city" required error={errors.city}>
           <div className="relative has-icon">
             <Building className="field-icon" size={17} aria-hidden="true" />
@@ -139,7 +137,6 @@ export default function ContactDetails({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* State / Province */}
         <Field label="State / Region" id="state" required error={errors.state}>
           <div className="relative has-icon">
             <Navigation className="field-icon" size={17} aria-hidden="true" />
@@ -162,7 +159,6 @@ export default function ContactDetails({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* Postal / PIN code */}
         <Field
           label="Postal / PIN Code"
           id="pin"

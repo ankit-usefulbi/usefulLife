@@ -215,7 +215,7 @@ const BookingPage = () => {
   return (
     <>
       <div className="space-y-6 mx-auto max-w-7xl">
-        {/* Back to Home Breadcrumb button */}
+       
         <div className="flex flex-wrap items-center justify-between gap-3">
           <button
             type="button"
@@ -227,7 +227,7 @@ const BookingPage = () => {
           </button>
         </div>
 
-        {/* Form Intro Banner */}
+       
         <div className="max-w-3xl">
           <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Complete Your Patient Health Registration
@@ -240,7 +240,7 @@ const BookingPage = () => {
           </p>
         </div>
 
-        {/* Mobile step progress tracker (visible only on small screens) */}
+       
         <div className="block rounded-2xl border border-slate-200/90 bg-white p-4 shadow-sm lg:hidden">
           <div className="mb-2.5 flex items-center justify-between">
             <span className="text-xs font-bold uppercase tracking-wider text-emerald-800">
@@ -250,14 +250,14 @@ const BookingPage = () => {
               {percent}% Done
             </span>
           </div>
-          {/* Progress Bar */}
+         
           <div className="h-2 w-full overflow-hidden rounded-full bg-slate-100">
             <div
               className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 transition-all duration-300"
               style={{ width: `${percent}%` }}
             />
           </div>
-          {/* Step icons row */}
+         
           <div className="mt-3 flex justify-between">
             {steps.map((st, i) => {
               const complete = submitted || i < step;
@@ -388,7 +388,7 @@ const BookingPage = () => {
                 </div>
               )}
 
-              {/* Step content or submitted confirmation */}
+             
               {submitted ? (
                 <div className="mx-auto max-w-xl py-6 text-center sm:py-10">
                   <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 shadow-glow">
@@ -413,7 +413,7 @@ const BookingPage = () => {
                     <strong>{form.email}</strong>.
                   </p>
 
-                  {/* Digital Patient Health Card Summary */}
+                 
                   <div className="mt-6 text-left rounded-2xl border border-emerald-200/90 bg-gradient-to-br from-emerald-50/40 via-white to-teal-50/30 p-5 shadow-xs">
                     <div className="flex items-center justify-between border-b border-emerald-100 pb-3">
                       <div className="flex items-center gap-2">
@@ -465,7 +465,7 @@ const BookingPage = () => {
                     </div>
                   </div>
 
-                  {/* Action buttons */}
+                 
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
                     <button
                       type="button"
@@ -506,10 +506,10 @@ const BookingPage = () => {
                 </div>
               ) : (
                 <>
-                  {/* Active Step Content */}
+                 
                   {activeStepComponent}
 
-                  {/* Navigation Buttons Row */}
+                 
                   <div className="mt-8 flex flex-col-reverse gap-3 border-t border-slate-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
                     <button
                       type="button"

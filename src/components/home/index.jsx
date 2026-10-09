@@ -141,10 +141,10 @@ export default function HomeView({ onBookAppointment }) {
                 loading="eager"
               />
 
-              {/* Gradient overlay for readability of badges */}
+              
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
 
-              {/* Floating Badge 2 (Top Right): Accreditation */}
+             
               <div className="absolute top-4 right-4 flex items-center gap-1.5 rounded-xl bg-emerald-900/80 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md border border-emerald-700/50">
                 <Award
                   size={14}

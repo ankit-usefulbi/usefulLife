@@ -17,7 +17,7 @@ const Sidebar = ({ steps, step, submitted, percent, onStepClick }) => {
       className="hidden lg:flex flex-col gap-5 rounded-2xl border border-emerald-950/10 bg-white p-5 shadow-sm"
       aria-label="Form progress"
     >
-      {/* Top progress overview */}
+      
       <div>
         <div className="flex items-center justify-between">
           <span className="text-xs font-bold uppercase tracking-wider text-emerald-800">
@@ -28,7 +28,7 @@ const Sidebar = ({ steps, step, submitted, percent, onStepClick }) => {
           </span>
         </div>
 
-        {/* Progress bar */}
+        
         <div
           className="mt-3 h-2 w-full overflow-hidden rounded-full bg-slate-100"
           role="progressbar"
@@ -56,7 +56,7 @@ const Sidebar = ({ steps, step, submitted, percent, onStepClick }) => {
 
       <hr className="border-slate-100" />
 
-      {/* Step items list */}
+      
       <nav aria-label="Steps">
         <ol className="space-y-2">
           {steps.map((item, index) => {
@@ -85,7 +85,7 @@ const Sidebar = ({ steps, step, submitted, percent, onStepClick }) => {
                         : "opacity-75"
                   }`}
                 >
-                  {/* Step status icon */}
+                  
                   <div
                     className={`relative flex h-9 w-9 shrink-0 items-center justify-center rounded-xl font-bold transition-all ${
                       complete
@@ -102,7 +102,7 @@ const Sidebar = ({ steps, step, submitted, percent, onStepClick }) => {
                     )}
                   </div>
 
-                  {/* Step info text */}
+                  
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between">
                       <p

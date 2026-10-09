@@ -3,7 +3,6 @@ import { Shield, Lock, PhoneCall, Calendar } from "lucide-react";
 const Footer = ({ onNavigate }) => {
   return (
     <footer className="mt-12 border-t border-slate-200/80 pt-8 pb-12 text-xs text-slate-500">
-      {/* Top footer row: brand and quick links */}
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 pb-8 border-b border-slate-100">
         <div className="space-y-3 sm:col-span-2">
           <div className="flex items-center gap-2">

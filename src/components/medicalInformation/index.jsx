@@ -153,7 +153,7 @@ export default function MedicalInformation({ form, errors, update }) {
 
   return (
     <div className="space-y-7">
-      {/* Part 1: Biometrics & Measurements */}
+      
       <div className="rounded-xl border border-slate-200/90 bg-white p-5 shadow-xs">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
           <div>
@@ -165,7 +165,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </p>
           </div>
 
-          {/* Real-time BMI Display Badge */}
+          
           {bmi ? (
             <div
               className={`flex items-center gap-2 rounded-xl border px-3 py-1.5 text-xs font-semibold ${bmiColor}`}
@@ -183,7 +183,7 @@ export default function MedicalInformation({ form, errors, update }) {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          {/* Blood Group */}
+          
           <div className="sm:col-span-2">
             <Field
               label="Blood Group"
@@ -212,7 +212,7 @@ export default function MedicalInformation({ form, errors, update }) {
                   );
                 })}
               </div>
-              {/* Fallback hidden/visible select for accessibility */}
+              
               <div className="sr-only">
                 <select
                   id="bloodGroup"
@@ -231,7 +231,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </Field>
           </div>
 
-          {/* Height */}
+          
           <Field
             label="Height (cm)"
             id="height"
@@ -253,7 +253,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </div>
           </Field>
 
-          {/* Weight */}
+          
           <Field
             label="Weight (kg)"
             id="weight"
@@ -275,7 +275,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </div>
           </Field>
 
-          {/* SpO2 */}
+          
           <Field
             label="Blood Oxygen SpO₂ (%)"
             id="spo2"
@@ -297,7 +297,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </div>
           </Field>
 
-          {/* Temperature */}
+          
           <Field
             label="Body Temperature (°C)"
             id="temperature"
@@ -322,7 +322,7 @@ export default function MedicalInformation({ form, errors, update }) {
         </div>
       </div>
 
-      {/* Part 2: Medical History & Clinical Details */}
+      
       <div className="rounded-xl border border-slate-200/90 bg-white p-5 shadow-xs">
         <div className="mb-4 border-b border-slate-100 pb-3">
           <h3 className="text-sm font-bold text-slate-900">
@@ -335,7 +335,7 @@ export default function MedicalInformation({ form, errors, update }) {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
-          {/* Allergies */}
+          
           <div className="sm:col-span-2">
             <Field
               label="Known Allergies"
@@ -369,7 +369,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </Field>
           </div>
 
-          {/* Current Medications */}
+          
           <div className="sm:col-span-2">
             <Field
               label="Current Medications &amp; Supplements"
@@ -387,7 +387,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </Field>
           </div>
 
-          {/* Existing Conditions */}
+          
           <div className="sm:col-span-2">
             <Field
               label="Chronic or Existing Medical Conditions"
@@ -421,7 +421,7 @@ export default function MedicalInformation({ form, errors, update }) {
             </Field>
           </div>
 
-          {/* Emergency Contact */}
+          
           <div className="sm:col-span-2 rounded-xl border border-emerald-100 bg-emerald-50/40 p-4">
             <Field
               label="Designated Emergency Contact Person"

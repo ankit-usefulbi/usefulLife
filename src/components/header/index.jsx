@@ -26,7 +26,7 @@ const Header = ({ onNavigate }) => {
   return (
     <header className="sticky top-0 z-50 mx-auto mb-6 max-w-7xl">
       <div className="flex items-center justify-between rounded-2xl border border-emerald-950/10 bg-white/95 px-4 py-3 shadow-sm backdrop-blur-md sm:px-6">
-        {/* Brand Logo & Name */}
+        
         <button
           type="button"
           onClick={() => navigate("/")}
@@ -60,7 +60,7 @@ const Header = ({ onNavigate }) => {
           </div>
         </button>
 
-        {/* Desktop Navigation Links */}
+        
         <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
           <button
             type="button"
@@ -92,9 +92,9 @@ const Header = ({ onNavigate }) => {
           </button>
         </nav>
 
-        {/* Right side controls & Mobile Hamburger */}
+        
         <div className="flex items-center gap-2">
-          {/* Mobile Hamburger Icon Button */}
+          
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -113,7 +113,7 @@ const Header = ({ onNavigate }) => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      
       {mobileMenuOpen && (
         <div className="lg:hidden mt-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-lg">
           <nav className="flex flex-col gap-1.5">

@@ -93,7 +93,7 @@ export default function PersonalInfo({ form, errors, update }) {
   return (
     <div className="space-y-6">
       <div className="grid gap-x-5 gap-y-5 sm:grid-cols-2">
-        {/* Full Name */}
+        
         <Field
           label="Full Legal Name"
           id="fullName"
@@ -114,7 +114,7 @@ export default function PersonalInfo({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* Email Address */}
+        
         <Field
           label="Email Address"
           id="email"
@@ -136,7 +136,7 @@ export default function PersonalInfo({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* Date of Birth */}
+        
         <Field
           label="Date of Birth"
           id="dob"
@@ -161,7 +161,7 @@ export default function PersonalInfo({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* Phone number */}
+        
         <Field
           label="Mobile Phone Number"
           id="phone"
@@ -203,7 +203,7 @@ export default function PersonalInfo({ form, errors, update }) {
           </div>
         </Field>
 
-        {/* Gender Selection */}
+        
         <div className="sm:col-span-2">
           <fieldset
             className="min-w-0 space-y-2.5"
